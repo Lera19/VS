@@ -1,0 +1,16 @@
+﻿@model Module5.Models.GetAllEmployeeViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@foreach (var item in Model.Employees)
+{
+    <p> First name: @item.FirstName </p>
+    <p> Last name: @item.LastName </p>
+    <p> Phone number: @item.Phone </p>
+}
+<a href="~/Views/EmplRoom/CreateRoom.cshtml">Create Room</a>
+
+<a href="~/Views/EmplRoom/CreateEmployee.cshtml">Create Employee</a>
